@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Home - EcoBook</title>
+
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/profile.css">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap-2.min.css">
+  <link rel="stylesheet" href="../fonts/font-awesome.min.css">
+</head>
+
+
+<body>
+    <div class="wrapper collapser">
+    <div class="top_navbar">
+      <div class="top_menu">
+        <div class="page_title">
+          <div class="logo">
+            <img src="../img/logo.png" class="logo">
+          </div>
+          <h1 class="title_text">EcoBook</h1>
+        </div>
+        <ul id="header_right-side"> 
+            <div id="header_username"></div>
+            <div id="header_divider"></div>
+          <li><a href="../../index.html">
+              <i class="fas fa-home"></i>
+            </a></li>
+          <li><a href="#">
+              <i class="fas fa-user"></i>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Adicionar as tags no href das restantes páginas -->
+    <div class="sidebar" id="navbar">
+      <ul>
+        <li>
+          <a href="../../index.html">
+            <span class="icon"><i class="fas fa-home"></i></span>
+            <span style="font-size: 15px;" class="title">Inicio</span>
+          </a>
+        </li>
+        <li class="sublist">
+          <a href="#" class="active">
+            <span class="icon"><i class="fas fa-user"></i></span>
+            <span style="font-size: 15px;" class="title">Perfil</span>
+          </a>
+          <div class="subnav">
+            <a href="profile.html">Ver Perfil</a>
+            <a href="#lista-partilha">Ver Lista de Partilha</a>
+            <a href="#lista-desejos">Ver Lista de Desejos</a>
+          </div>
+        </li>
+        <li><a href="catalog.html">
+            <span class="icon"><i class="fas fa-book"></i></span>
+            <span style="font-size: 15px;" class="title">Catálogo de Trocas</span>
+          </a></li>
+        <li class="sublist"><a href="#">
+            <span class="icon"><i class="fas fa-leaf"></i></span>
+            <span style="font-size: 15px;" class="title">Eco-Repositório</span>
+          </a>
+          <div class="subnav">
+            <a href="ecorep.html">Ver Eco-Repositório</a>
+            <a href="donate.html">Doar Livro</a>
+            <a href="mistery.html">Caixa Mistério</a>
+          </div>
+        </li>
+        <li><a href="settings.html">
+                <span class="icon"><i class="fas fa-question-circle"></i></span>
+                <span style="font-size: 15px" class="title">Ajuda</span>
+            </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="main_container">
+      <div class="container-fluid profile">
+        <div class="row">
+          <div class="col-sm-4" style="padding-left:100px">
+            <img id="profile_pic" class="profile-pic img-fluid d-block mx-auto mb-5">
+          </div>
+          <div class="col-sm-8">
+            <div class="user-info">
+              <span class="user-info-label">NOME: </span>
+              <span id="user-name" class="user-info-text">Josefina Miguel Silva</span>
+            </div>
+            <div class="user-info">
+              <span class="user-info-label">EMAIL: </span>
+              <span id="user-email" class="user-info-text">jos.silva@gmail.com</span>
+            </div>
+            <div class="user-info">
+              <span class="user-info-label">MORADA: </span>
+              <span id="user-address" class="user-info-text">Rua dos Livros, nº 5, 2º Dto</span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4" style="padding-left:100px">
+            <div class="points-box">
+              <span id="user-points" class="points-number">300</span>
+              <span class="points-text">Pontos</span>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="edit-details-btn">
+              Editar Detalhes
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="lista-partilha" class="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2 class="text-uppercase text-center text-secondary">Lista de Partilha</h2>
+              <hr class="star-dark mb-5 text-center star-center-lg">
+            </div>
+            <div id="share-btn" class="add-btn">
+              <div class="add-btn-sign">+ Adicionar Livro</div>
+            </div>
+          </div>
+          <ul id="share-list">
+            <div id="no-content-sharelist">
+              <div class="no-content">
+                Sem Conteúdo
+              </div>
+              <div class="no-content-info">
+                Clique em "+ Adicionar Livro" para disponibilizar um livro para troca.
+              </div>
+            </div>
+          </ul>
+        </div>
+      </section>
+
+      <section id="lista-desejos" class="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2 class="text-uppercase text-center text-secondary">Lista de Desejos</h2>
+              <hr class="star-dark mb-5 text-center star-center-lg">
+            </div>
+            <div id="wish-btn" class="add-btn" >
+              <div class="add-btn-sign">+ Adicionar Livro</div>
+            </div>
+          </div>
+          <ul id="wish-list">
+            <div id="no-content-wishlist">
+              <div class="no-content">
+                Sem Conteúdo
+              </div>
+              <div class="no-content-info">
+                Clique em "+ Adicionar Livro" para acrescentar um livro que deseje.
+              </div>
+            </div>
+          </ul>
+        </div>
+      </section>
+
+
+      <section id="portfolio" class="portfolio">
+        <div class="container">
+          <h2 class="text-uppercase text-center text-secondary">Mensagens</h2>
+          <hr class="star-dark mb-5 star-center">
+          <div class="row message">
+            <div class="col-sm-1 message-img-wrapper">
+              <img src="../img/placeholder-user.png" class="message-img">
+            </div>
+            <div>
+              <div class="message-name">António Felgueiras</div>
+              <div class="message-text">Proponho uma troca de livros</div>
+            </div>
+          </div>
+          <div class="row message">
+            <div class="col-sm-1 message-img-wrapper">
+              <img src="../img/placeholder-user.png" class="message-img">
+            </div>
+            <div>
+              <div class="message-name">Cristina Oliveira</div>
+              <div class="message-text">Proponho uma troca de livros</div>
+            </div>
+          </div>
+          <div class="row message">
+            <div class="col-sm-1 message-img-wrapper">
+              <img src="../img/placeholder-user.png" class="message-img">
+            </div>
+            <div>
+              <div class="message-name">Mário Machado</div>
+              <div class="message-text">Proponho uma troca de livros</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div id="share-modal" class="modal-profile">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+            <button id="share-close" type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <i class="fa fa-times"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container text-center">
+                <div class="col-lg-12 mx-auto">
+                  <h2 class="text-uppercase text-secondary mb-0">Adicionar livro para partilha</h2>
+                  <hr class="star-dark mb-5 star-center-lg">
+                  <div class="col-lg-10 mx-auto">
+                    <form action="">
+                      <div class="model-info">
+                        <span class="model-label" style="margin-right: 51px;">ISBN:</span>
+                        <input id="share-isbn" type="text" class="model-input" placeholder="Insira o nº isbn" required></input>
+                      </div><div class="model-info">
+                        <span class="model-label" style="margin-right: 22px;">TÍTULO:</span>
+                        <input id="share-title" type="text" class="model-input" placeholder="Insira o título" required></input>
+                      </div><div class="model-info">
+                        <span class="model-label" style="margin-right: 23px;">AUTOR:</span>
+                        <input id="share-author" type="text" class="model-input" placeholder="Insira o nome do autor" required></input>
+                      </div>
+                      <div class="model-info">
+                        <span class="model-label" style="margin-right: 53px;">ANO:</span>
+                        <input id="share-year" type="number" class="model-input" placeholder="Insira o ano de lançamento" required></input>
+                      </div> 
+                      <div class="model-info">
+                        <span class="model-label" style="margin-right: 5px;">GÉNERO:</span>
+                        <select id="share-genres" class="model-select" required>
+                          <option value="">--selecione o género do livro--</option>
+                        </select>
+                      </div>
+                    </form>                                     
+                  </div>
+                  <div id="share-btn-add" class="add-btn-modal" >
+                    <div class="add-btn-sign">+ Adicionar Livro</div>
+                  </div>   
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="wish-modal" class="modal-profile">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+            <button id="wish-close" type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <i class="fa fa-times"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container text-center">
+                <div class="col-lg-12 mx-auto">
+                  <h2 class="text-uppercase text-secondary mb-0">Adicionar livro que deseja</h2>
+                  <hr class="star-dark mb-5 star-center-lg">
+                  <div class="col-lg-10 mx-auto">
+                    <div class="model-info">
+                      <span class="model-label" style="margin-right: 51px;">ISBN:</span>
+                      <input id="wish-isbn" type="text" class="model-input" placeholder="Insira o nº isbn"></input>
+                    </div><div class="model-info">
+                      <span class="model-label" style="margin-right: 22px;">TÍTULO:</span>
+                      <input id="wish-title" type="text" class="model-input" placeholder="Insira o título"></input>
+                    </div><div class="model-info">
+                      <span class="model-label" style="margin-right: 23px;">AUTOR:</span>
+                      <input id="wish-author" type="text" class="model-input" placeholder="Insira o nome do autor"></input>
+                    </div>
+                    <div class="model-info">
+                      <span class="model-label" style="margin-right: 53px;">ANO:</span>
+                      <input id="wish-year" type="number" class="model-input" placeholder="Insira o ano de lançamento"></input>
+                    </div>
+                    <div class="model-info">
+                      <span class="model-label" style="margin-right: 5px;">GÉNERO:</span>
+                      <select id="wish-genres" class="model-select">
+                        <option value="">--selecione o género do livro--</option>
+                      </select>
+                    </div>                   
+                  </div>
+                  <div id="wish-btn-add" class="add-btn-modal" >
+                    <div class="add-btn-sign">+ Adicionar Livro</div>
+                  </div>   
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts used -->
+  <script src="../js/jquery-3.5.1.min.js"></script>
+  <script src="../js/fontawsome.js"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+  <script src="../js/localStorageHandler.js"></script>
+  <script src="../js/profile.js"></script>
+  <script src="../js/navbar.js"></script>
+
+
+</body>
+
+</html>
